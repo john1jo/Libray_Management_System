@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="LABASSLOGINPAGE.ADMINLOGINPAGEController">
+    <stylesheets>
+        <URL value="@admin login page.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="NAME" layoutX="125.0" layoutY="82.0" prefHeight="25.0" prefWidth="298.0" promptText="NAME" />
+      <PasswordField fx:id="PASSWORD" layoutX="123.0" layoutY="140.0" prefHeight="25.0" prefWidth="304.0" promptText="PASSWORD" />
+      <Button fx:id="LOG" layoutX="28.0" layoutY="226.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="202.0" text="LOGIN" />
+      <Button fx:id="CANCEL" layoutX="329.0" layoutY="226.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="217.0" text="CANCEL" />
+   </children>
+</AnchorPane>
