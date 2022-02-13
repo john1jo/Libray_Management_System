@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.HelloController">
+   <children>
+      <Pane layoutY="8.0" prefHeight="391.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="91.0" layoutY="179.0" text="Name" />
+            <Label layoutX="89.0" layoutY="228.0" text="Password" />
+            <RadioButton layoutX="91.0" layoutY="106.0" mnemonicParsing="false" text="Stud">
+               <toggleGroup>
+                  <ToggleGroup fx:id="type" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="300.0" layoutY="106.0" mnemonicParsing="false" text="Lab" toggleGroup="$type" />
+            <Label layoutX="187.0" layoutY="61.0" text="LoginPage" />
+            <TextField fx:id="name" layoutX="168.0" layoutY="175.0" prefHeight="25.0" prefWidth="182.0" />
+            <PasswordField fx:id="pass" layoutX="168.0" layoutY="224.0" prefHeight="25.0" prefWidth="182.0" />
+            <Button fx:id="cancelbtn" layoutX="314.0" layoutY="274.0" mnemonicParsing="false" onAction="#cancelMethod" text="cancel" />
+            <Button fx:id="logbtn" layoutX="161.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginMethod" text="Login" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

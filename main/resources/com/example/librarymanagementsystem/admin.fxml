@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AdminController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="-23.0" prefHeight="469.0" prefWidth="240.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <Button fx:id="green" layoutX="71.0" layoutY="78.0" mnemonicParsing="false" onAction="#showGreen" prefHeight="25.0" prefWidth="126.0" text="ADD MEMEBR" />
+                  <Button fx:id="red" layoutX="78.0" layoutY="155.0" mnemonicParsing="false" onAction="#showRed" prefHeight="25.0" prefWidth="112.0" text="ADD BOOK" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="greenAnchor" layoutX="217.0" prefHeight="469.0" prefWidth="475.0" style="-fx-background-color: lightgreen;">
+               <children>
+                  <TextField fx:id="name" layoutX="89.0" layoutY="67.0" prefHeight="25.0" prefWidth="229.0" promptText="STUDENT NAME" />
+                  <TextField fx:id="id" layoutX="89.0" layoutY="115.0" prefHeight="25.0" prefWidth="229.0" promptText="STUDENT ID" />
+                  <TextField fx:id="password" layoutX="89.0" layoutY="222.0" prefHeight="25.0" prefWidth="229.0" promptText="STUDENT PASSWORD" />
+                  <TextField fx:id="email" layoutX="89.0" layoutY="276.0" prefHeight="25.0" prefWidth="229.0" promptText="Email" />
+                  <Button fx:id="insert" layoutX="14.0" layoutY="346.0" mnemonicParsing="false" onAction="#InsertionMtd" text="INSERT" />
+                  <Button fx:id="update" layoutX="159.0" layoutY="346.0" mnemonicParsing="false" onAction="#updateMtd" text="UPDATE" />
+                  <Button fx:id="delete" layoutX="327.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteMtd" text="DELETE" />
+                  <RadioButton fx:id="MALE" layoutX="93.0" layoutY="165.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="105.0" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="FEMALE" layoutX="238.0" layoutY="165.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" text="Female" toggleGroup="$sex" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="redAnchor" layoutX="217.0" prefHeight="469.0" prefWidth="475.0" style="-fx-background-color: red;">
+               <children>
+                  <TextField fx:id="book_na" layoutX="101.0" layoutY="70.0" prefHeight="25.0" prefWidth="268.0" promptText="BOOK NAME" />
+                  <TextField fx:id="bookid" layoutX="101.0" layoutY="143.0" prefHeight="25.0" prefWidth="268.0" promptText="BOOK ID" />
+                  <TextField fx:id="book_aut" layoutX="101.0" layoutY="210.0" prefHeight="25.0" prefWidth="268.0" promptText="BOOK AUTHER NAME" />
+                  <TextField fx:id="book_publi" layoutX="101.0" layoutY="270.0" prefHeight="25.0" prefWidth="268.0" promptText="PUBLISHER  " />
+                  <Button fx:id="ADD_B" layoutX="30.0" layoutY="352.0" mnemonicParsing="false" onAction="#addbookmth" text="ADD_BOOK" />
+                  <Button fx:id="UPDATE_B" layoutX="163.0" layoutY="333.0" mnemonicParsing="false" onAction="#updateMt" text="UPDATED_BOOK" />
+                  <Button fx:id="DELETE_B" layoutX="338.0" layoutY="364.0" mnemonicParsing="false" onAction="#deletemth" text="DELETE_BOOK" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
